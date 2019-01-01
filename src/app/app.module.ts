@@ -1,4 +1,3 @@
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,6 +15,7 @@ import { RegisterComponent } from './login/register.component';
 // SERVICIOS
 import { ServicesModule } from './services/services.module';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,6 +28,7 @@ import { ServicesModule } from './services/services.module';
     APP_ROUTES,
     PagesModule,
     FormsModule,
+    ReactiveFormsModule,
     ServicesModule
   ],
   providers: [],
