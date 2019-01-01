@@ -1,3 +1,4 @@
+import { ProfileComponent } from './profile/profile.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { Routes, RouterModule } from "@angular/router";
 
@@ -22,6 +23,7 @@ const pagesRoutes: Routes = [
         { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' } },
         { path: 'rxjs', component: RxjsComponent, data: { titulo: 'Observables' } },
         { path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Configuración de la cuenta' } },
+        { path: 'profile', component: ProfileComponent, data: { titulo: 'Perfil de usuario' } },
         { path: '', redirectTo: "/dashboard", pathMatch: "full" }
       ]
     }
